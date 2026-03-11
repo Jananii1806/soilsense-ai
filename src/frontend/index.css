@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('/assets/fonts/CabinetGrotesk-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans-Variable.woff2') format('woff2');
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Earth green palette */
+    --background: 0.97 0.008 120;
+    --foreground: 0.18 0.03 140;
+    --card: 0.99 0.004 100;
+    --card-foreground: 0.18 0.03 140;
+    --popover: 0.99 0.004 100;
+    --popover-foreground: 0.18 0.03 140;
+    --primary: 0.42 0.12 145;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.92 0.025 120;
+    --secondary-foreground: 0.25 0.06 140;
+    --muted: 0.93 0.015 115;
+    --muted-foreground: 0.5 0.04 140;
+    --accent: 0.88 0.05 100;
+    --accent-foreground: 0.25 0.06 140;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.02 120;
+    --input: 0.88 0.02 120;
+    --ring: 0.42 0.12 145;
+    --chart-1: 0.55 0.18 145;
+    --chart-2: 0.65 0.15 100;
+    --chart-3: 0.48 0.14 30;
+    --chart-4: 0.58 0.19 200;
+    --chart-5: 0.72 0.14 60;
+    --sidebar: 0.22 0.04 145;
+    --sidebar-foreground: 0.95 0.01 120;
+    --sidebar-primary: 0.62 0.18 145;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.30 0.06 145;
+    --sidebar-accent-foreground: 0.92 0.01 120;
+    --sidebar-border: 0.32 0.05 145;
+    --sidebar-ring: 0.62 0.18 145;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'General Sans', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabinet Grotesk', system-ui, sans-serif;
+  }
+}
